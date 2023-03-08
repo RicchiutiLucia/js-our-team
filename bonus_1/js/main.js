@@ -50,8 +50,11 @@ const containerDom = document.getElementById('container');
 
 for(let i = 0; i < ourTeam.length; i++){
     const members = ourTeam[i];
-    for(let key in members){
-        console.log(key + ':'+ members[key]);
-        containerDom.innerHTML += `<div id="cards class="row text-center justify-content-center""><span>${key} :</span> <span>${members[key]}</span></div>`
-    }
+    containerDom.innerHTML += `<div class="card">
+    <span>Nome</span> 
+    <span>${members['nome']}</span>
+    <span>Ruolo</span> 
+    <span>${members['ruolo']}</span>
+    <img src="img/${members['immagine']}" alt="${members['nome']}">
+</div>`
 }
