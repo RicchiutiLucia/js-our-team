@@ -43,3 +43,5 @@ const ourTeam = [
         'immagine':'barbara-ramos-graphic-designer.jpg'
     }
 ];
+
+console.log(ourTeam);
