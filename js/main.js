@@ -45,3 +45,13 @@ const ourTeam = [
 ];
 
 console.log(ourTeam);
+
+const containerDom = document.getElementById('container');
+
+for(let i = 0; i < ourTeam.length; i++){
+    const members = ourTeam[i];
+    for(let key in members){
+        console.log(key + ':'+ members[key]);
+        containerDom.innerHTML += `<div class="card"><span>${key} :</span> <span>${members[key]}</span></div>`
+    }
+}
