@@ -51,10 +51,10 @@ let cards = document.getElementById('cards');
 
 for(let i = 0; i < ourTeam.length; i++){
     const members = ourTeam[i];
-   cards.innerHTML += ` <div class="m-3" style="width: calc(100% /4)">
-    <img class="card-img-top" src="img/${members.immagine}" alt="Card image">
+   cards.innerHTML += ` <div class="m-3" style="width: calc(100% /4) ">
+    <img class="card-img-top rounded-2" src="img/${members.immagine}" alt="Card image">
     <div class="card-body">
-    <h5 class="card-title">${members.nome}</h5>
+    <h5 class="card-title mt-2">${members.nome}</h5>
     <p class="card-text">${members.ruolo}</p>
     </div>
     </div>`
